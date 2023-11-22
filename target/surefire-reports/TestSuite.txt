@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 3, Time elapsed: 26.185 s <<< FAILURE! - in TestSuite
+setUp(com.PocketBank.PB_01)  Time elapsed: 20.53 s  <<< FAILURE!
+java.lang.ExceptionInInitializerError
+Caused by: net.sf.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @66498326
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @66498326
+
+setUp(com.PocketBank.PB_01)  Time elapsed: 2.225 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class net.sf.cglib.proxy.Enhancer
+Caused by: java.lang.ExceptionInInitializerError: Exception net.sf.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @66498326 [in thread "setUp@2"]
+
+setUp(com.PocketBank.PB_01)  Time elapsed: 1.603 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class net.sf.cglib.proxy.Enhancer
+Caused by: java.lang.ExceptionInInitializerError: Exception net.sf.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @66498326 [in thread "setUp@2"]
+
